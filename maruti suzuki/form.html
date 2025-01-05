@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>enquiry form</title>
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+<link href="https://fonts.googleapis.com/css2?family=Madimi+One&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="realform.css">
+
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+
+    
+</head>
+<body>
+    <div class="container">
+        <div class="form-box">
+            <form method="post" name="formfill" onsubmit="return validation()">
+                <h3>Register</h3>
+                <p id="result">head</p>
+                <div class="input-box">
+                    <i class='bx bx-user-circle'></i>
+                    <input type="text" name="Username" placeholder="Username">
+                </div>
+                <div class="input-box">
+                    <i class='bx bx-envelope' ></i>
+                    <input type="email" name="Email" placeholder="Email">
+                </div>
+                <div class="input-box">
+                    <i class='bx bxs-lock-alt' ></i>
+                    <input type="password" name="password" placeholder="enter the password.">
+                </div>
+                <div class=" input-box">
+                    <i class='bx bxs-lock-alt' ></i>
+                    <input type=" password" name="Cpassword" placeholder=" confirm your password.">
+                </div>
+                <div class="button">
+                    <input type="submit" class="btn"  onclick="validation()"  value="Register" name="submit">
+                </div>
+                <div class="group">
+                    <span><a href="#">forget-password</a></span>
+                    <br> <span><a href="#">Login</a></span>
+                </div>
+            </form>
+        </div>
+        <div class="popup" id="popup">
+            <ion-icon name="checkmark-circle-outline"></ion-icon>
+            <h2>thank-you!!</h2>
+            <p>your Registration complet successfully . thanks
+                our team will contact you through email
+            </p>
+            <br>
+            <a href="main.html"><button onclick="CloseSlide()">OK</button></a>
+        </div>
+    </div>
+    
+    <script src="form.js"></script>
+    
+    
+</body>
+
+</html>
